@@ -8,6 +8,37 @@
 
 - 依赖[jedi](https://github.com/davidhalter/jedi) 
 
+安装 pip(出现问题）
+Traceback (most recent call last):
+  File "/usr/bin/pip", line 11, in <module>
+    sys.exit(main())
+  File "/usr/lib/python3.4/site-packages/pip/__init__.py", line 215, in main
+    locale.setlocale(locale.LC_ALL, '')
+  File "/usr/lib64/python3.4/locale.py", line 592, in setlocale
+    return _setlocale(category, locale)
+locale.Error: unsupported locale setting
+解决办法 
+$ export LC_ALL=C
+Here is my locale settings:
+
+$ locale
+LANG=en_US.UTF-8
+LANGUAGE=
+LC_CTYPE="C"
+LC_NUMERIC="C"
+LC_TIME="C"
+LC_COLLATE="C"
+LC_MONETARY="C"
+LC_MESSAGES="C"
+LC_PAPER="C"
+LC_NAME="C"
+LC_ADDRESS="C"
+LC_TELEPHONE="C"
+LC_MEASUREMENT="C"
+LC_IDENTIFICATION="C"
+LC_ALL=C
+
+
 使用pip安装jedi:
 
     sudo pip install jedi
