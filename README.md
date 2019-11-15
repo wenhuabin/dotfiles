@@ -77,4 +77,4 @@ LC_ALL=C
 
 ## git
 
-- 默认没设置config user.email, uer.name, 可以根据git提示设置全局的或者项目的user.name和user.email
+- 设置config user.email, uer.name, 可以根据git提示设置全局的或者项目的user.name和user.email
